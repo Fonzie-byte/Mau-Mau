@@ -1,6 +1,8 @@
 # Mau-Mau
 A PHP terminal application that plays 4 hands of [Mau-Mau](https://en.wikipedia.org/wiki/Mau-Mau_(card_game)) against itself.
 
+I designed this project, wrote the code files and tested the terminal program in slightly under 1 hour and 10 minutes, I made a quick fix about an hour after.
+
 **!!** Requires PHP 8.0 or newer to run **!!**
 
 ## Example usage
