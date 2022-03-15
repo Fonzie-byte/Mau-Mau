@@ -96,9 +96,14 @@ while (!$gameOver) {
 		// If this is null, that means they were not able to play a card.
 		// Deal them a card instead.
 		if ($playedCard === null) {
-			// If there are no cards left to draw.
+			// Draw a card, give it to the player and let it be known!
+			$toDraw = $deck->draw();
+			$player->take($toDraw);
+			echo "$name drew {$toDraw->getNotation()}\n";
+
+			// If the deck is now empty...
 			if ($deck->isEmpty()) {
-				// Re-build the deck with every-except-the-last previously played card.
+				// Re-build the deck with every-except-the-last previously played card. (this is how normal humans would play it)
 				$deck = new Deck(array_slice($previousCards, 0, count($previousCards) - 1));
 				$previousCards = [array_pop($previousCards)];
 
@@ -106,13 +111,6 @@ while (!$gameOver) {
 				$deck->shuffle();
 				echo 'Re-built the deck, it\'s now: ' . $deck->getAllCards() . PHP_EOL;
 			}
-
-			// Weather we re-built the deck or not, draw a card!
-			$toDraw = $deck->draw();
-
-			// Give it to the player and let it be known!
-			$player->take($toDraw);
-			echo "$name drew {$toDraw->getNotation()}\n";
 		}
 		// If it's not null, if's a card that they were able to play!
 		else {
