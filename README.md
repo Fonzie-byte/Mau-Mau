@@ -5,129 +5,118 @@ A PHP terminal application that plays 4 hands of [Mau-Mau](https://en.wikipedia.
 
 ## Example usage
 ```
-$ php -f main.php 
+$ php -f main.php
 Dealt the following hands:
-Anna: ♠Q, ♦2, ♦7, ♥2, ♦5, ♦J, ♦8
-Bob: ♣5, ♣9, ♦K, ♣6, ♠5, ♠1, ♣K
-Chris: ♥9, ♦3, ♦Q, ♦10, ♥5, ♥4, ♠J
-Dahlia: ♣2, ♣3, ♣4, ♠4, ♣Q, ♠2, ♣10
-The remaining deck is: ♥1, ♥6, ♥K, ♠K, ♠7, ♠10, ♥10, ♥3, ♦6, ♠6, ♣1, ♣8, ♦9, ♣J, ♥J, ♠9, ♠8, ♥Q, ♥7, ♥8, ♦1, ♦4, ♠3, ♣7
+Anna: ♥A, ♠7, ♥7, ♦K, ♠10, ♠9, ♣5
+Bob: ♦8, ♥2, ♦7, ♦4, ♠6, ♣6, ♥9
+Chris: ♦9, ♣2, ♦A, ♦2, ♠3, ♥6, ♣Q
+Dahlia: ♣10, ♣J, ♥10, ♥Q, ♠Q, ♦6, ♦J
+The remaining deck is: ♣8, ♥3, ♣7, ♥4, ♥5, ♣3, ♣A, ♥J, ♠2, ♣4, ♣K, ♥K, ♠K, ♦Q, ♠4, ♠8, ♦10, ♠A, ♥8, ♠5, ♠J, ♣9, ♦5, ♦3
 
-Anna played ♠Q
-Bob played ♠5
-Chris played ♥5
-Dahlia drew ♥1
-
-Anna played ♥2
-Bob drew ♥6
-Chris played ♥9
-Dahlia played ♥1
-
-Anna drew ♥K
-Bob played ♠1
-Chris played ♠J
-Dahlia played ♠4
-
-Anna drew ♠K
-Bob drew ♠7
-Chris played ♥4
-Dahlia played ♣4
-
-Anna drew ♠10
-Bob played ♣5
-Chris drew ♥10
-Dahlia played ♣2
-
-Anna played ♦2
-Bob played ♦K
-Chris played ♦3
-Dahlia played ♣3
-
-Anna drew ♥3
-Bob played ♣9
-Chris drew ♦6
-Dahlia played ♣Q
-
-Anna drew ♠6
-Bob played ♣6
-Chris played ♦6
-Dahlia drew ♣1
-
-Anna played ♦7
-Bob played ♠7
-Chris drew ♣8
-Dahlia played ♠2
-
-Anna played ♠K
-Bob played ♣K
-Chris played ♣8
+Anna played ♥A
+Bob played ♥2
+Chris played ♣2
 Dahlia played ♣10
 
 Anna played ♠10
-Bob drew ♦9
-Chris played ♦10
-Dahlia drew ♣J
+Bob played ♠6
+Chris played ♠3
+Dahlia played ♠Q
 
-Anna played ♦5
-Bob played ♦9
-Chris played ♦Q
-Dahlia drew ♥J
+Anna played ♠7
+Bob played ♦7
+Chris played ♦9
+Dahlia played ♦6
 
-Anna played ♦J
-Bob drew ♠9
-Chris drew ♠8
-Dahlia played ♣J
+Anna played ♦K
+Bob played ♦8
+Chris played ♦A
+Dahlia played ♦J
 
-Anna drew ♥Q
-Bob drew ♥7
-Chris drew ♥8
-Dahlia played ♣1
-
-Anna drew ♦1
-Bob drew ♦4
-Chris drew ♠3
-Dahlia drew ♣7
-
-Anna played ♦1
+Anna drew ♣8
 Bob played ♦4
-Re-built the deck, it's now: ♣9, ♠K, ♦9, ♥2, ♣J, ♣5, ♠10, ♥1, ♣Q, ♦1, ♠5, ♦3, ♠4, ♣K, ♣3, ♦2, ♠7, ♦5, ♥9, ♥5, ♥4, ♦K, ♦Q, ♦6, ♠2, ♦7, ♣1, ♦10, ♣4, ♣10, ♣8, ♣2, ♠1, ♠Q, ♣6, ♦J, ♠J
-Chris drew ♣9
+Chris played ♦2
+Dahlia drew ♥3
+
+Anna drew ♣7
+Bob drew ♥4
+Chris drew ♥5
+Dahlia drew ♣3
+
+Anna drew ♣A
+Bob drew ♥J
+Chris drew ♠2
+Dahlia drew ♣4
+
+Anna drew ♣K
+Bob drew ♥K
+Chris played ♠2
 Dahlia drew ♠K
 
-Anna played ♦8
-Bob drew ♦9
-Chris played ♠8
+Anna played ♠9
+Bob played ♥9
+Chris played ♥6
+Dahlia played ♥10
+
+Anna played ♥7
+Bob played ♥4
+Chris played ♥5
+Dahlia played ♥Q
+
+Anna drew ♦Q
+Bob played ♥J
+Chris drew ♠4
+Dahlia played ♣J
+
+Anna played ♣5
+Bob played ♣6
+Chris played ♣Q
+Dahlia played ♣3
+
+Anna played ♣8
+Bob drew ♠8
+Chris drew ♦10
+Dahlia played ♣4
+
+Anna played ♣7
+Bob drew ♠A
+Chris drew ♥8
+Dahlia drew ♠5
+
+Anna played ♣A
+Bob played ♠A
+Chris played ♠4
 Dahlia played ♠K
 
-Anna played ♥K
-Bob played ♥6
-Chris played ♥10
-Dahlia played ♥J
-
-Anna played ♥3
-Bob played ♥7
+Anna played ♣K
+Bob played ♥K
 Chris played ♥8
-Dahlia drew ♥2
+Dahlia played ♥3
 
-Anna played ♥Q
+Anna drew ♠J
+Bob drew ♣9
+Chris drew ♦5
+Dahlia drew ♦3
+Re-built the deck, it's now: ♥K, ♦8, ♠9, ♥4, ♦A, ♣J, ♣6, ♦J, ♥J, ♣4, ♦K, ♦7, ♥10, ♣5, ♠7, ♦9, ♣K, ♠A, ♣8, ♣Q, ♠Q, ♠6, ♠2, ♥9, ♦6, ♣10, ♠10, ♣2, ♠3, ♥6, ♥2, ♦2, ♣3, ♠K, ♣A, ♥8, ♥Q, ♦4, ♠4, ♥A, ♣7, ♥5, ♥7
+
+Anna drew ♥K
+Bob drew ♦8
+Chris drew ♠9
+Dahlia played ♦3
+
+Anna played ♦Q
+Bob played ♦8
+Chris played ♦10
+Dahlia drew ♥4
+
+Anna drew ♦A
 Bob drew ♣J
-Chris drew ♣5
-Dahlia played ♥2
+Chris played ♦5
+Dahlia played ♠5
 
-Anna drew ♠10
-Bob drew ♥1
-Chris drew ♣Q
-Dahlia drew ♦1
+Anna played ♠J
+Bob played ♠8
+Chris played ♠9
 
-Anna drew ♠5
-Bob played ♥1
-Chris drew ♦3
-Dahlia played ♦1
-
-Anna drew ♠4
-Bob played ♦9
-Chris played ♣9
-Dahlia played ♣7
-
-Dahlia won!
+Chris won!
 ```
